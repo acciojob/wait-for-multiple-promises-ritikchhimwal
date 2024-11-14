@@ -6,7 +6,7 @@ window.onload = function () {
   const loadingRow = document.createElement("tr");
   const loadingCell = document.createElement("td");
   loadingCell.setAttribute("colspan", "2");
-  loadingCell.textContent = "Loading...";
+  loadingRow.textContent = "Loading...";
   loadingRow.appendChild(loadingCell);
   outputElement.appendChild(loadingRow);
 
