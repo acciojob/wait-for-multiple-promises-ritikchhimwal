@@ -1,12 +1,12 @@
-//your JS code here. If required.
 window.onload = function () {
   const outputElement = document.getElementById("output");
 
-  // Insert the loading row
+  // Insert the loading row with an id attribute
   const loadingRow = document.createElement("tr");
+  loadingRow.setAttribute("id", "loading"); // Add id for Cypress test
   const loadingCell = document.createElement("td");
   loadingCell.setAttribute("colspan", "2");
-  loadingRow.textContent = "Loading...";
+  loadingCell.textContent = "Loading...";
   loadingRow.appendChild(loadingCell);
   outputElement.appendChild(loadingRow);
 
